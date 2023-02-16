@@ -1,10 +1,10 @@
 # include <stdio.h>
 
-int main()
+int main(void)
 {
 		/*String Initializatton*/
 
-	char myStr[] = "Programming is like building a multilingual puzzle";
+	char myStr[] = "\"Programming is like building a multilingual puzzle";
 		/*Print The String using Puts*/
 
 	puts(myStr);
