@@ -1,5 +1,11 @@
 # include <stdio.h>
 
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 {
 		/*String Initializatton*/
@@ -9,5 +15,5 @@ int main(void)
 
 	puts(myStr);
 
-	return 0;
+	return (0);
 }
