@@ -2,8 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /*
- * main: -entry point
- *
+ * main - entry point
  * Description: Printing positive negative and zero
  * Return: always 0 (Success)
  */
