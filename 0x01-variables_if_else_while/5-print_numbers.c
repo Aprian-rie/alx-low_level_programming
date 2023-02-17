@@ -2,7 +2,7 @@
 /**
  * main - numbers
  * Description: prints numbers
- * return: success (0)
+ * Return: success (0)
  */
 int main(void)
 {
