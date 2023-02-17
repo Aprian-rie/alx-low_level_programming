@@ -5,7 +5,7 @@
  * more headers goes there
  * main: -entry point
  *
- * Printing positive negative and zero
+ * Description: Printing positive negative and zero
  * Return: always 0 (Success)
  */
 int main(void)
