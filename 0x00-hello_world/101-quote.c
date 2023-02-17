@@ -7,4 +7,4 @@
 int main(void)
 {
 	/*Using the function write to display the words*/
-
+}
