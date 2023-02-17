@@ -1,15 +1,15 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there
+/*
+ * more headers goes there
  * main - entry point
  *
  * Return always 0 (Success)
  */
-
-/* betty style doc for function main goes there */
 int main(void)
 {
+	/*This program prints +ve if n is + and -ve if n is - and 0 if it's zero */
 	int n;
 
 	srand(time(0));
