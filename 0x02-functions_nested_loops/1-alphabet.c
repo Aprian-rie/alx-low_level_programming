@@ -1,6 +1,7 @@
 # include <stdio.h>
 /**
- * main - Alphabets
+ * print_alphabet - Alphabets
+ *
  * Description: Prints the Alphabets
  * Return: 0 Success
  */
