@@ -4,7 +4,7 @@
  * Description: using putchar to print putchar
  * Return: 0 successful
  */
-int main()
+int main(void)
 {
 	int letter = '_';
 
