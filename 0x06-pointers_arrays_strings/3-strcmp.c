@@ -14,6 +14,8 @@ int _strcmp(char *s1, char *s2)
 	{
 		if (*(s1 + i) > *(s2 + i))
 			return (*(unsigned char *)s1 - *(unsigned char *)s2);
+		else if (*(s2 + i) > *(s1 + i))
+			return (*(unsigned char *)s1 - *(unsigned char *)s2);
 		i++;
 	}
 	return (0);
