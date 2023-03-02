@@ -2,8 +2,9 @@
 # include "main.h"
 /**
  * string_toupper - converts all lowercase letters to uppercase
+ * @s: a pointer
+ *
  * Return: A character
- * @s: the character to be converted
  */
 char *string_toupper(char *s)
 {
