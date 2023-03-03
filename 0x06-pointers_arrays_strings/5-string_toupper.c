@@ -7,8 +7,6 @@
  */
 char *string_toupper(char *s)
 {
-	int x;
-
 	for ( ; *s; s++)
 		if (('a' <= *s) && (*s <= 'z'))
 			*s = 'A' + (*s - 'a');
