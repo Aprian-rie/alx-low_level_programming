@@ -4,16 +4,16 @@
  * _memset - fills memory with a constant byte
  * @s: a character
  * @b: a character
- * @int: an unsigned integer
+ * @n: an unsigned integer
  * Return: A character
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	char* p = s;
+	char *p = s;
 
-	while(n --)
+	while (n--)
 	{
 		*p++ = (unsigned char)b;
 	}
-	return s;
+	return (s);
 }
