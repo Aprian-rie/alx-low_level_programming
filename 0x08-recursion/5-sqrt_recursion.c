@@ -1,4 +1,4 @@
-# include "main"
+# include "main.h"
 /**
  * _sqrt_recursion - finds the square root
  * @n: the number to be evaluated
@@ -6,9 +6,12 @@
  */
 int _sqrt_recursion(int n)
 {
-	if (n == 0 || n == 1)
+	int x;
+
+	if (n == 0 || n == 1 || n < 0){
 		return (n);
-		int x = _sqrt_recursion(n - 1);
+	}
+		 x = _sqrt_recursion(n - 1);
 
 		if (x * x <= n)
 		{
