@@ -1,10 +1,12 @@
 # include <stdio.h>
 /**
- * abs - does abs
- * @n: a character
- * Return: Integer
+ * _abs - absolute value
+ * @n: an integer
+ * Return: an integer
  */
 int _abs(int n)
 {
+	if (n < 0)
+		return -n;
 	return n;
 }
