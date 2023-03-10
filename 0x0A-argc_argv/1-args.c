@@ -2,10 +2,12 @@
 /**
  * main - prints number of arguments
  * @argc: argument count
+ * @argv: Ignored
  * Return: 0 success
  */
 int main(int argc, char *argv[])
 {
-	printf("%d", count);
+	(void) argv;
+	printf("%d\n", argc - 1);
 	return (0);
 }
