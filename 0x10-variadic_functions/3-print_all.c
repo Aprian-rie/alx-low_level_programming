@@ -7,10 +7,11 @@
  */
 void print_all(const char * const format, ...)
 {
-	va_list args;
+	int i = 0;
+	va_list list;
 	char *str, *sep = "";
 
-	va_start(args, format);
+	va_start(list, format);
 	if (format)
 	{
 		while (format[i])
