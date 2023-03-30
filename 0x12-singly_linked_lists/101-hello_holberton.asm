@@ -4,7 +4,7 @@ section .data
 
 section .text
     global main
-    extern printf, fflush
+    extern printf
 
     main:
         push rbp
@@ -14,9 +14,6 @@ section .text
         mov rsi, msg
         xor eax, eax
         call printf
-
-        mov edi, 0
-        call fflush
 
         mov rsp, rbp
         pop rbp
