@@ -1,16 +1,25 @@
-global main
-extern printf
-
 section .data
-	hello: db 'Hello, Holberton', 0
-	format: db '%s', 10, 0
+    msg db 'Hello, Holberton', 10, 0
+    fmt db '%s', 0
 
 section .text
-main:
-	push hello
-	push format
-	call printf
-	add rsp, 16
+    global main
+    extern printf, fflush
 
-	mov eac, 0
-	ret
+    main:
+        push rbp
+        mov rbp, rsp
+
+        mov rdi, fmt
+        mov rsi, msg
+        xor eax, eax
+        call printf
+
+        mov edi, 0
+        call fflush
+
+        mov rsp, rbp
+        pop rbp
+        xor eax, eax
+        ret
+
