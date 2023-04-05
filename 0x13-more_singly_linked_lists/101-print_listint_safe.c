@@ -7,5 +7,7 @@
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	return (head);
+	size_t count = 0;
+
+	return (count);
 }
