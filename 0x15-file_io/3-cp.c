@@ -4,6 +4,12 @@
 #include <fcntl.h>
 #include "main.h"
 #define BUFFER_SIZE 1024
+/**
+ * main - copies content of a file to another
+ * @argc: argument count
+ * @argv: argument vector
+ * Return: 0 for success
+ */
 int main(int argc, char *argv[])
 {
 	int _file_from, _file_to;
@@ -12,7 +18,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		_error("Usage: %s file_from file_to\n", argv[0],97);
+		_error("Usage: %s file_from file_to\n", argv[0], 97);
 	}
 	_file_from = open(argv[1], O_RDONLY);
 	if (_file_from == -1)
@@ -32,14 +38,10 @@ int main(int argc, char *argv[])
 			_error("Error: Can't write to %s\n", argv[2], 99);
 		}
 		if (_write != _read)
-		{
 			_error("Error: Short write to %s\n", argv[2], 99);
-		}
 	}
 	if (_read == -1)
-	{
 		_error("Error: Can't read from file %s\n", argv[1], 98);
-	}
 	if (close(_file_from) == -1)
 	{
 		_error("Error: Can't close fd %d\n", argv[1], 100);
