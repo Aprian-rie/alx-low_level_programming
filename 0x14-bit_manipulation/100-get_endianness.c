@@ -1,5 +1,5 @@
 /**
- * get_endiannesss - checks the endianness
+ * get_endianness - checks the endianness
  * Return: 0 for big endian and 1 for little endian
  */
 int get_endianness(void)
