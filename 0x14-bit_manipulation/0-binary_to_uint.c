@@ -7,21 +7,23 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int power = 1;
-	unsigned int decimal_result = 0;
-	int binary_no = strlen(b);
+	unsigned int result = 0;
 	int i;
 
 	if (b == NULL)
 		return (0);
 
-	for (i = binary_no - 1; i >= 0; i--)
+	for (i = 0; b[i] != '\0'; i++)
 	{
-		if (b[i] != '0' && b[i] != '1')
+		if (b[i] == '0' || b[i] == '1')
+		{
+			result = result << 1;
+			result += b[i] - '0';
+		}
+		else
+		{
 			return (0);
-		if (b[i] == '1')
-			decimal_result += power;
-		power *= 2;
+		}
 	}
-	return (decimal_result);
+	return (result);
 }
