@@ -2,6 +2,7 @@
  * set_bit - sets the value of a bit to 1
  * @n: the integer
  * @index: the index
+ * Return: the value
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
