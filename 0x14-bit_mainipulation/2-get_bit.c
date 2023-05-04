@@ -1,3 +1,9 @@
+/**
+ * get_bit - returns the value of a bit at a given index
+ * @n: the integer
+ * @index: the index of the bit
+ * Return: value at index
+ */
 int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned long int bit = 1;

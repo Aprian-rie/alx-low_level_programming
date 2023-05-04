@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * prints binary representation of a number
+ * print_binary - prints binary  representation of a number
  * @n: number to be printed
  * Return: nothing
  */
@@ -14,7 +14,7 @@ void print_binary(unsigned long int n)
 	}
 
 	i = n & 1;
-	if ( i == 1)
+	if (i == 1)
 	{
 		_putchar('1');
 	}
