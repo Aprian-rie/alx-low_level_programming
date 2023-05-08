@@ -18,8 +18,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	file_d = open(filename, O_RDONLY);
 	if (file_d == -1)
+	{
 		free(buffer);
 		return (0);
+	}
 	_read = read(file_d, buffer, letters);
 	if (_read == -1)
 	{
