@@ -8,14 +8,14 @@
  * @mode: integer
  * Return: file_d
  */
-int open_file(char* filename, int flags, int mode)
+int open_file(char *filename, int flags, int mode)
 {
 	int file_d;
 
 	file_d = open(filename, flags, mode);
 	if (file_d == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't open file %s\n",filename);
+		dprintf(STDERR_FILENO, "Error: Can't open file %s\n", filename);
 		exit(1);
 	}
 	return (file_d);
@@ -39,14 +39,15 @@ void close_file(int file_d)
  * @to_file: to file name
  * Return: nothing
  */
-void copy_file(char* from_file, char* to_file)
+void copy_file(char *from_file, char *to_file)
 {
 	int fd_from, fd_to;
 	ssize_t num_read;
 	char buffer[BUFFER_SIZE];
 
 	fd_from = open_file(from_file, O_RDONLY, 0);
-	fd_to = open_file(to_file, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR | S_IWGRP | S_IROTH);
+	fd_to = open_file(to_file, O_WRONLY | O_CREAT | O_TRUNC,
+			S_IRUSR | S_IWUSR | S_IWGRP | S_IROTH);
 	while ((num_read = read(fd_from, buffer, BUFFER_SIZE)) > 0)
 	{
 		if (write(fd_to, buffer, num_read) != num_read)
