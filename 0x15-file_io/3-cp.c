@@ -46,7 +46,7 @@ void copy_file(char *from_file, char *to_file)
 	char buffer[BUFFER_SIZE];
 
 	fd_from = open_file(from_file, O_RDONLY, 0);
-	fd_to = open_file(to_file, O_WRONLY | O_CREAT | O_TRUNC,
+	fd_to = open_file(to_file, O_RDWR | O_CREAT | O_TRUNC,
 			S_IRUSR | S_IWUSR | S_IWGRP | S_IROTH);
 	while ((num_read = read(fd_from, buffer, BUFFER_SIZE)) > 0)
 	{
