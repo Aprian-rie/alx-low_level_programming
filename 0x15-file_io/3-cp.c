@@ -4,7 +4,7 @@
 /**
  * open_file - opens a file
  * @filename: the filename
- * @flags: desc
+ * @flags: description
  * @mode: integer
  * Return: file_d
  */
@@ -75,7 +75,7 @@ int main(int argc, char *argv[])
 {
 	if (argc != 3)
 	{
-		dprintf(STDERR_FILENO, "USage: %s file_from file_to\n", argv[0]);
+		dprintf(STDERR_FILENO, "Usage: %s file_from file_to\n", argv[0]);
 		exit(1);
 	}
 	copy_file(argv[1], argv[2]);
